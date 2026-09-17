@@ -158,16 +158,3 @@ p {
     font-size: 18px;
     color: #2c1e18;
 }
-.image-row {
-    display: flex;                
-    flex-wrap: wrap;             
-    gap: 15px;                   
-    align-items: center;          
-    justify-content: flex-start; 
-}
-
-/* Optional: Ensure images scale nicely */
-.image-row img {
-    max-width: 100%;
-    height: auto;
-}
