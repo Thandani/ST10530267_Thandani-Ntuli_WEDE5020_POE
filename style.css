@@ -1,0 +1,161 @@
+/* --- Global Styles --- */
+body {
+    background-color: #faf6f0;
+    color: #2c1e18;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #2c1e18;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 4px solid #c85a32;
+}
+
+header img {
+    width: 210px; 
+    height: 210px; 
+    object-fit: contain; 
+    margin-right: auto; 
+}
+
+header a {
+    color: #e6c594;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #c85a32;
+    color: #faf6f0;
+}
+
+/* --- Main Layout --- */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #c85a32;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(44, 30, 24, 0.05);
+    border: 1px solid #e6c594;
+}
+
+/* --- Images --- */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+/* --- Buttons & Links --- */
+button, input[type="submit"] {
+    background-color: #c85a32;
+    color: #faf6f0;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #2c1e18;
+}
+
+a {
+    color: #c85a32;
+}
+
+a:hover {
+    color: #2c1e18;
+}
+
+/* --- Forms (Enquiry & Contact) --- */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #2c1e18;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #e6c594;
+    border-radius: 4px;
+    background-color: #faf6f0;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #c85a32;
+}
+
+/* --- Divider --- */
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #e6c594;
+    margin: 40px 0;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c1e18;
+    color: #faf6f0;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+p {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    text-align: left;
+    font-size: 18px;
+    color: #2c1e18;
+}
