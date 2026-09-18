@@ -95,14 +95,17 @@ I discovered new features and added them so that the website looks nice and I ke
 Test and iterate
 
 This is for a phone
- src="<img width="1907" height="981" alt="Screenshot 2026-09-18 184935" src="https://github.com/user-attachments/assets/3abe9c55-daff-45b8-9447-e6746a4a076e" />
-" />
+ <img width="1907" height="981" alt="Screenshot 2026-09-18 184935" src="https://github.com/user-attachments/assets/3abe9c55-daff-45b8-9447-e6746a4a076e" />
+" 
 
 This is for desktop
- src="<img width="1912" height="977" alt="Screenshot 2026-09-18 185218" src="https://github.com/user-attachments/assets/e24850e6-46df-4fd7-b051-042cf0fd0851" />
-" />
+ "<img width="1912" height="977" alt="Screenshot 2026-09-18 185218" src="https://github.com/user-attachments/assets/e24850e6-46df-4fd7-b051-042cf0fd0851" />
+
 
 This is for tablet
- src="<img width="1912" height="977" alt="Screenshot 2026-09-18 185218" src="https://github.com/user-attachments/assets/bd279c0c-1a87-4a92-bea0-9bf5ca9a8084" />
-"  />
+ "<img width="1912" height="977" alt="Screenshot 2026-09-18 185218" src="https://github.com/user-attachments/assets/bd279c0c-1a87-4a92-bea0-9bf5ca9a8084" />
+" 
+Referencing
+
+W3School, 2026. How to code css. [online]. Available at: <https://www.w3schools.com/w3css/default.asp#gsc.tab=0> [Accessed 15 September 2026].
 
