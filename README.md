@@ -84,3 +84,22 @@ References
 21. Freee-Foods, 2020. Gluten free brown bread. [electronic print]. Available at: <https://www.free2foods.co.uk> [Accessed 11 August 2026].
 22. Good Food, 2024. Pain au chocolat. [electronic print]. Available at: <https://www.bbcgoodfood.com> [Accessed 11 August 2026].
 23. Gold Medal Bakery, 2020. Private label loaf bread. [electronic print]. Available at: <https://www.goldmedalbakery.com> [Accessed 10 August 2026].
+
+
+Part 2
+
+. I was not given site map marks and I provided it.
+
+I discovered new features and added them so that the website looks nice and I kept it simple.
+
+Test and iterate
+
+This is for a phone
+<img width="4382" height="822" alt="Untitled Diagram drawio" src="C:\Users\thand\OneDrive\Pictures\Screenshots\Screenshot 2026-09-18 184935.png" />
+
+This is for desktop
+<img width="4382" height="822" alt="Untitled Diagram drawio" src="C:\Users\thand\OneDrive\Pictures\Screenshots\Screenshot 2026-09-18 185103.png" />
+
+This is for tablet
+<img width="4382" height="822" alt="Untitled Diagram drawio" src="C:\Users\thand\OneDrive\Pictures\Screenshots\Screenshot 2026-09-18 185218.png"  />
+
