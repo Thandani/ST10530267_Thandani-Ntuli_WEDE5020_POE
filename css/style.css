@@ -1,4 +1,4 @@
-/* --- Global Styles --- */
+
 body {
     background-color: #faf6f0;
     color: #2c1e18;
@@ -21,8 +21,8 @@ header {
 }
 
 header img {
-    width: 210px; 
-    height: 210px; 
+    width: 300px; 
+    height: 300px; 
     object-fit: contain; 
     margin-right: auto; 
 }
@@ -165,96 +165,3 @@ footer p {
     text-align: center;
 }
 
-@media only screen and (max-width: 960px) {
-
-   
-
-    #wrapper {
-
-      width: 360px;
-
-    }
-
- 
-
-    header{
-
-        height: 375px;
-
-    }
-
- 
-
-    header img{
-
-        left: 125px;
-
-    }
-
- 
-
-    #topLinks{
-
-        right: 100px;
-
-        top: 150px;
-
-        width: 175px;
-
-    }
-
- 
-
-    #topLinks li{
-
-        display: block;
-
-        padding-bottom: 10px;
-
-        padding-top: 10px;
-
-    }
-
- 
-
-    #homeInfo{
-
-        padding-right: 20px;
-
-        width: 340px;
-
-    }
-
- 
-
-    #bottomLinks ul{
-
-        padding-left: 0px;
-
-    }
-
- 
-
-    footer p{
-
-        padding-left: 10px;
-
-    }
-
- 
-
-    #membership #col2{
-
-        padding-left: 0px;
-
-    }
-
- 
-
-    iframe {
-
-        width: 320px;
-
-    }
-
-  }
