@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open contact.html",
+            "file": "c:\\Users\\thand\\Downloads\\ST10530267_Thandani Ntuli_WEDE5020_POE\\ST10530267_Thandani Ntuli_WEDE5020_POE\\contact.html"
+        }
+    ]
+}

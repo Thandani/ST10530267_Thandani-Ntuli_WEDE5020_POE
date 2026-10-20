@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry</title>
-     <link rel="stylesheet" href="style.css">
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,15 +22,18 @@
         <h1>Product Enquiry Form</h1>
         <p>Have a question about our menu, custom celebration cakes, or bulk orders? Fill out the form below and our team will get back to you within 24 hours.</p>
 
-        <form action="#" method="post">
-            <label for="fullname">Full Name:</label><br>
-            <input type="text" id="fullname" name="fullname" required><br><br>
+        <form id="myForm">
+            First Name: <input type="text" id="fname" name="fname"><br>
+            <small id="fnameError"></small><br>
 
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            Last Name: <input type="text" id="lname" name="lname"><br>
+            <small id="lnameError"></small><br>
 
-            <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone"><br><br>
+            Email: <input type="text" id="email" name="email"><br>
+            <small id="emailError"></small><br>
+
+            Phone Number: <input type="text" id="pnumber" name="pnumber"><br>
+            <small id="pnumberError"></small><br>
 
             <label for="category">Enquiry Type:</label><br>
             <select id="category" name="category">
@@ -41,8 +45,9 @@
             <label for="message">Details / Special Requests:</label><br>
             <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
 
-            <button type="submit">Submit</button>
+            <input type="submit" value="submit">
         </form>
+        <p id="messages"></p>
     </main>
 
     <footer>
