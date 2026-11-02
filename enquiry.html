@@ -7,52 +7,67 @@
     <script src="validation.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="site-body">
+    <div class="announcement-bar">Freshly baked every day <span aria-hidden="true">🥯</span> Made with love in Pretoria</div>
 
-    <header>
-        <img src="WARM_OVEN_STUDIO-removebg-preview.png" alt="Logo" width="150" height="150">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="products.html">Our Pastries</a>
-        <a href="enquiry.html">Enquiry</a>
-        <a href="contact.html">Contact Us</a>
+    <header class="site-header">
+        <img class="site-logo" src="WARM_OVEN_STUDIO-removebg-preview.png" alt="Logo" width="150" height="150">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="products.html">Our Pastries</a>
+        <a class="nav-link" href="enquiry.html">Enquiry</a>
+        <a class="nav-link" href="contact.html">Contact Us</a>
     </header>
 
-    <main>
-        <h1>Product Enquiry Form</h1>
+    <main class="site-main">
+        <h1 class="page-title">Product Enquiry Form</h1>
         <p>Have a question about our menu, custom celebration cakes, or bulk orders? Fill out the form below and our team will get back to you within 24 hours.</p>
 
-        <form id="myForm">
-            First Name: <input type="text" id="fname" name="fname"><br>
-            <small id="fnameError"></small><br>
+        <form class="form-card enquiry-form" id="myForm">
+            First Name: <input class="form-control" type="text" id="fname" name="fname"><br>
+            <small class="field-error" id="fnameError"></small><br>
 
-            Last Name: <input type="text" id="lname" name="lname"><br>
-            <small id="lnameError"></small><br>
+            Last Name: <input class="form-control" type="text" id="lname" name="lname"><br>
+            <small class="field-error" id="lnameError"></small><br>
 
-            Email: <input type="text" id="email" name="email"><br>
-            <small id="emailError"></small><br>
+            Email: <input class="form-control" type="text" id="email" name="email"><br>
+            <small class="field-error" id="emailError"></small><br>
 
-            Phone Number: <input type="text" id="pnumber" name="pnumber"><br>
-            <small id="pnumberError"></small><br>
+            Phone Number: <input class="form-control" type="tel" id="pnumber" name="pnumber"><br>
+            <small class="field-error" id="pnumberError"></small><br>
 
             <label for="category">Enquiry Type:</label><br>
-            <select id="category" name="category">
+            <select class="form-control" id="category" name="category">
                 <option value="custom-cake">Custom Cake Request</option>
                 <option value="wholesale">Wholesale Order</option>
                 <option value="general">General Product Question</option>
             </select><br><br>
 
             <label for="message">Details / Special Requests:</label><br>
-            <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+            <textarea class="form-control" id="message" name="message" rows="5" cols="40" required></textarea><br><br>
 
-            <input type="submit" value="submit">
+            <input class="submit-button" type="submit" value="Submit">
         </form>
-        <p id="messages"></p>
+        <p class="form-message" id="messages"></p>
+
+        
+     <div class="video-container">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="12805589_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="overlay"></div>
+    </div>
+
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 Warm Oven Studio. All rights reserved.</p>
     </footer>
+
+    <script src="script.js" defer></script>
+
+   
 
 </body>
 </html>
