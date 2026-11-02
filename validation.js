@@ -3,7 +3,7 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Highlight the current page in the navigation.
+    // --- Navigation Highlight ---
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll(".site-header .nav-link").forEach((link) => {
         const linkPage = link.getAttribute("href");
@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Add a mobile navigation class when the page is viewed on a narrow screen.
+    // --- Mobile Header Class ---
     const header = document.querySelector(".site-header");
     if (header && window.matchMedia("(max-width: 760px)").matches) {
         header.classList.add("mobile-header");
     }
 
-    // Product image click-to-enlarge preview.
+    // --- Product Image Click-to-Enlarge Preview ---
     document.querySelectorAll(".product-image, .hero-image, .team-photo, .team-member-image").forEach((img) => {
         img.style.cursor = "zoom-in";
         img.setAttribute("tabindex", "0");
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Reusable validation helpers.
+    // --- Reusable Validation Helpers ---
     const showError = (input, message) => {
         const error = document.getElementById(`${input.id}Error`);
         input.setAttribute("aria-invalid", message ? "true" : "false");
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // South African local mobile/landline format: 10 digits beginning with 0.
     const validSouthAfricanPhone = (value) => /^0\d{9}$/.test(value.replace(/[\s()-]/g, ""));
 
-    // Enquiry form validation.
+    // --- Enquiry Form Validation ---
     const enquiryForm = document.getElementById("myForm");
     if (enquiryForm) {
         const fields = {
@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
         enquiryForm.addEventListener("submit", (event) => {
             let isValid = true;
 
+            // Clear old errors & Name validation
             if (!fields.fname.value.trim()) {
                 isValid = showError(fields.fname, "Please enter your first name.") && isValid;
             } else {
@@ -118,12 +119,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 showError(fields.lname, "");
             }
 
+            // Email validation: must contain "@" and "."
             if (!validEmail(fields.email.value.trim())) {
                 isValid = showError(fields.email, "Please enter a valid email address.") && isValid;
             } else {
                 showError(fields.email, "");
             }
 
+            // Phone number validation: must be a valid phone number
             if (!validSouthAfricanPhone(fields.pnumber.value.trim())) {
                 isValid = showError(fields.pnumber, "Enter a valid 10-digit South African number, e.g. 0821234567.") && isValid;
             } else {
@@ -160,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Contact form validation. It displays a demo confirmation but does not send email.
+    // --- Contact Form Validation ---
     const contactForm = document.querySelector(".contact-form");
     if (contactForm) {
         contactForm.addEventListener("submit", (event) => {
@@ -195,7 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Decorative scroll progress bar.
+    // --- Decorative Scroll Progress Bar ---
     const progress = document.createElement("div");
     progress.className = "scroll-progress";
     progress.setAttribute("aria-hidden", "true");
@@ -209,7 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", updateProgress, { passive: true });
     updateProgress();
 
-    // Back-to-top button appears after the visitor scrolls.
+    // --- Back-to-Top Button ---
     const topButton = document.createElement("button");
     topButton.className = "back-to-top";
     topButton.type = "button";
@@ -227,7 +230,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    // Reveal content cards as they enter the viewport.
+    // --- Reveal Content Cards on Scroll ---
     const revealItems = document.querySelectorAll(".content-card, .location-card");
     if ("IntersectionObserver" in window) {
         revealItems.forEach((item) => item.classList.add("reveal-on-scroll"));
@@ -242,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
         revealItems.forEach((item) => observer.observe(item));
     }
 
-    // Product search filters categories by their headings and visible text.
+    // --- Product Search Filter ---
     const productSearch = document.getElementById("productSearch");
     if (productSearch) {
         const categories = Array.from(document.querySelectorAll(".product-category"));
@@ -266,25 +269,25 @@ document.addEventListener("DOMContentLoaded", () => {
         productSearch.addEventListener("input", filterProducts);
     }
 
-});
-
-const video = document.getElementById("bg-video");
-
-    // 1. Catch any autoplay rejections from strict browser policies
-    video.play().catch(error => {
-        console.log("Autoplay prevented by browser policy:", error);
-    });
-
-    // 2. Pause video when out of viewport to save resources
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                video.play().catch(() => {});
-            } else {
-                video.pause();
-            }
+    // --- Background Video Management ---
+    const video = document.getElementById("bg-video");
+    if (video) {
+        // 1. Catch any autoplay rejections from strict browser policies
+        video.play().catch(error => {
+            console.log("Autoplay prevented by browser policy:", error);
         });
-    }, { threshold: 0.1 });
 
-    observer.observe(video);
+        // 2. Pause video when out of viewport to save resources
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    video.play().catch(() => {});
+                } else {
+                    video.pause();
+                }
+            });
+        }, { threshold: 0.1 });
+
+        videoObserver.observe(video);
+    }
 });
