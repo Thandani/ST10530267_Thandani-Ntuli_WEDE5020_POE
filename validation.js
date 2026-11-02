@@ -32,13 +32,12 @@ document.getElementById('myForm').addEventListener("submit", function(event) {
 
 
   // Phone number validation: must be a valid phone number
-   const phoneRegex = /^0\d{9}$/;
-    if (phoneNumber === "") {
-        document.getElementById('pnumberError').innerHTML = "Phone number is required.";
-    } else if (!phoneRegex.test(phoneNumber)) {
-        document.getElementById('pnumberError').innerHTML =
-            "Enter a valid 10-digit phone number.";
-     }
+   const phonePattern = /^0\d{9}$/;
+    if (!phonePattern.test(phoneNumber)) {
+    document.getElementById('pnumberError').innerHTML = "Please enter a valid phone number";
+    return;
+  }
+
 
   document.getElementById('messages').innerHTML = "Form submitted successfully!";
 });

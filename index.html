@@ -6,41 +6,45 @@
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="site-body">
+    <div class="announcement-bar">Freshly baked every day <span aria-hidden="true">🥯</span> Made with love in Pretoria</div>
 
     <!--- The navigation menu -->
-    <header>
-         <img src="WARM_OVEN_STUDIO-removebg-preview.png" alt="Logo" width="150" height="150">
-         <a href="index.html">Home</a>
-         <a href="about.html">About Us</a>
-         <a href="products.html">Our Pastries</a>
-         <a href="enquiry.html">Enquiry</a>
-         <a href="contact.html">Contact Us</a>
+    <header class="site-header">
+         <img class="site-logo" src="WARM_OVEN_STUDIO-removebg-preview.png" alt="Logo" width="150" height="150">
+         <a class="nav-link" href="index.html">Home</a>
+         <a class="nav-link" href="about.html">About Us</a>
+         <a class="nav-link" href="products.html">Our Pastries</a>
+         <a class="nav-link" href="enquiry.html">Enquiry</a>
+         <a class="nav-link" href="contact.html">Contact Us</a>
     </header>
 
-    <main> 
+    
+
+    <main class="site-main"> 
         <!-- Hero Section -->
-        <section>
-            <h1>Welcome to Warm Oven Studio</h1>
+        <section class="content-card hero-card">
+            <h1 class="page-title">Welcome to Warm Oven Studio</h1>
             <p>Baked fresh with every sunrise.</p>
-            <img src="easy-breakfast-pastries-5.jpg" alt="Freshly baked artisan pastries" width="150" height="150">
+            <img class="hero-image" src="easy-breakfast-pastries-5.jpg" alt="Freshly baked artisan pastries" width="150" height="150">
         </section>
 
         <hr>
 
         <!-- Introduction Section -->
-        <section>
+        <section class="content-card">
             <p>Stepping into Warm Oven Studio means experiencing the comfort of slow, intentional baking. From delicate, golden-layered croissants to rich, signature tarts, every pastry is handcrafted daily using honest ingredients and traditional techniques. Whether you are grabbing your morning espresso, ordering custom treats for a celebration or stopping in for a quiet moment, we have a seat—and a fresh bake—waiting for you.</p>
             <br><br>
             <!-- Call to Action -->
-            <a href="products.html"><button>Explore Our Products</button></a>
-            <a href="enquiry.html"><button>Place a Order</button></a>
+            <a class="nav-link" href="products.html"><button>Explore Our Products</button></a>
+            <a class="nav-link" href="enquiry.html"><button>Place a Order</button></a>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 Warm Oven Studio. All rights reserved.</p>
     </footer>
 
+    <script src="script.js" defer></script>
 </body>
 </html>
