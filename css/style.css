@@ -32,8 +32,8 @@ html {
 
 .site-logo {
     display: block;
-    width: 130px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
     margin-right: auto;
 }
@@ -362,8 +362,8 @@ small {
 /* --- Bakery Extras & Utilities --- */
 .announcement-bar {
     padding: 9px 16px;
-    background: #e6c594;
-    color: #2c1e18;
+    background: #2c1e18;
+    color: #e6c594;
     text-align: center;
     font-size: .82rem;
     font-weight: 800;
